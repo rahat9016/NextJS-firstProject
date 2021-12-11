@@ -1,4 +1,4 @@
-export async function getAllProducts() {
+export async function getTrendingProducts() {
   const res = await fetch(
     `https://next-project-by-rahat-default-rtdb.firebaseio.com/products.json`
   );
@@ -11,7 +11,4 @@ export async function getAllProducts() {
     });
   }
   return products;
-}
-export async function getIsFeatured() {
-  return getAllProducts.filter((products) => products.isFeatured);
 }

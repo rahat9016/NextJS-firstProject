@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import classes from "./trending-product-item.module.css";
 function TrendingProduct(props) {
+  console.log(props);
   const { title, price, image, id } = props.product;
   const discountPrice = (discount, price) => {
     const discountAmount = discount / 100;

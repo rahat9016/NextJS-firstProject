@@ -5,8 +5,9 @@ import NewArrival from "../components/new-arrival/new-arrival";
 import Services from "../components/services/services";
 import TrendingProducts from "../components/TrendingProducts/trending-products";
 import WelcomeArea from "../components/welcome/welcome-area";
+import { getTrendingProducts } from "../helpers/api-util";
 
-export default function Home() {
+function Home(props) {
   return (
     <div>
       <Hero />
@@ -14,8 +15,17 @@ export default function Home() {
       <NewArrival />
       <WelcomeArea />
       <Services />
-      <TrendingProducts />
+      <TrendingProducts products={props.products} />
       <Footer />
     </div>
   );
 }
+export async function getStaticProps() {
+  const trendingProducts = await getTrendingProducts();
+  return {
+    props: {
+      products: trendingProducts,
+    },
+  };
+}
+export default Home;
