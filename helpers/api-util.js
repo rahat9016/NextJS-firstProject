@@ -12,3 +12,9 @@ export async function getTrendingProducts() {
   }
   return products;
 }
+export async function getProductById(id) {
+  const products = await getTrendingProducts();
+  const findProduct = products.find((product) => product.id === id);
+  console.log(findProduct);
+  return findProduct;
+}

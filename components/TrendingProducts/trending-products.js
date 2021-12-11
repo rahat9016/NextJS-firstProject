@@ -21,7 +21,7 @@ function TrendingProducts(props) {
   );
 }
 export async function getStaticProps() {
-  const products = getIsFeatured();
+  const products = await getIsFeatured();
   return {
     props: {
       products: products,

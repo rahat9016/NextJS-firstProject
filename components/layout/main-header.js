@@ -21,7 +21,9 @@ function MainHeader() {
     <header>
       <div className={classes.mainHeader}>
         <div className={classes.logo}>
-          <h2>Logo</h2>
+          <Link href="/">
+            <h2>Logo</h2>
+          </Link>
         </div>
 
         <nav className={menuClick ? classes.active : classes.deactive}>
@@ -47,16 +49,27 @@ function MainHeader() {
         <div>
           <ul className={classes.icons}>
             <li>
-              <FontAwesomeIcon className={classes.icon} icon={faSearch} />
+              <Link href="/">
+                <FontAwesomeIcon className={classes.icon} icon={faSearch} />
+              </Link>
             </li>
             <li>
-              <FontAwesomeIcon className={classes.icon} icon={faUser} />
+              <Link href="/">
+                <FontAwesomeIcon className={classes.icon} icon={faUser} />
+              </Link>
             </li>
             <li>
-              <FontAwesomeIcon className={classes.icon} icon={faHeart} />
+              <Link href="/">
+                <FontAwesomeIcon className={classes.icon} icon={faHeart} />
+              </Link>
             </li>
             <li>
-              <FontAwesomeIcon className={classes.icon} icon={faShoppingCart} />
+              <Link href="/cart">
+                <FontAwesomeIcon
+                  className={classes.icon}
+                  icon={faShoppingCart}
+                />
+              </Link>
             </li>
           </ul>
         </div>

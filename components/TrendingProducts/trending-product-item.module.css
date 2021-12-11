@@ -1,9 +1,46 @@
 .productBox {
   padding: 10px;
+  cursor: pointer;
+}
+.btnBuy,
+.btnAdd {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btnBuy {
+  border: 3px solid orangered;
+  background-color: none;
+  color: orangered;
+  padding: 9px 20px;
+}
+.btnAdd {
+  background-color: orangered;
+  color: white;
+}
+.trendingProductImgBox {
+  position: relative;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+.productButton {
+  position: absolute;
+  right: 50px;
+}
+.trendingProductImgBox:hover .productButton {
+  bottom: 37px;
 }
 .trendingProductImgBox > img {
   width: 100%;
+  transition: transform 1s ease-in-out;
 }
+.trendingProductImgBox:hover > img {
+  transform: scale(1.2);
+}
+
 .trendingProductTitle {
   text-align: left;
   padding-top: 10px;
