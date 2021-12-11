@@ -1,0 +1,75 @@
+[debug] [2021-12-11T14:22:10.141Z] ----------------------------------------------------------------------
+[debug] [2021-12-11T14:22:10.143Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-12-11T14:22:10.143Z] CLI Version:   9.23.1
+[debug] [2021-12-11T14:22:10.143Z] Platform:      win32
+[debug] [2021-12-11T14:22:10.143Z] Node Version:  v14.17.2
+[debug] [2021-12-11T14:22:10.143Z] Time:          Sat Dec 11 2021 20:22:10 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-12-11T14:22:10.143Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-11T14:22:10.191Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-11T14:22:10.191Z] > authorizing via signed-in user (minhajurrohoman9016@gmail.com)
+[debug] [2021-12-11T14:22:10.192Z] [iam] checking project next-project-by-rahat for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-11T14:22:10.193Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-11T14:22:10.194Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-11T14:22:15.160Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sat, 11 Dec 2021 14:22:39 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-11T14:22:15.167Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/next-project-by-rahat:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-11T14:22:26.298Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2021-12-11T14:22:26.299Z] > refreshing access token with scopes: []
+[debug] [2021-12-11T14:22:26.299Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-11T14:22:28.269Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 11 Dec 2021 14:22:52 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-11T14:22:28.275Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/next-project-by-rahat [none]
+[debug] [2021-12-11T14:22:28.763Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/next-project-by-rahat 200
+[debug] [2021-12-11T14:22:28.763Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/next-project-by-rahat {"projectId":"next-project-by-rahat","projectNumber":"986047062639","displayName":"next-project-by-rahat","name":"projects/next-project-by-rahat","resources":{"hostingSite":"next-project-by-rahat","realtimeDatabaseInstance":"next-project-by-rahat-default-rtdb"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'next-project-by-rahat'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-11T14:22:28.766Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-11T14:22:28.766Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-11T14:22:29.062Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 11 Dec 2021 14:22:53 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-11T14:22:29.066Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/next-project-by-rahat/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-11T14:22:40.634Z] Error: getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+[debug] [2021-12-11T14:22:44.777Z] ----------------------------------------------------------------------
+[debug] [2021-12-11T14:22:44.779Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-12-11T14:22:44.779Z] CLI Version:   9.23.1
+[debug] [2021-12-11T14:22:44.779Z] Platform:      win32
+[debug] [2021-12-11T14:22:44.779Z] Node Version:  v14.17.2
+[debug] [2021-12-11T14:22:44.780Z] Time:          Sat Dec 11 2021 20:22:44 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-12-11T14:22:44.780Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-11T14:22:44.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-11T14:22:44.827Z] > authorizing via signed-in user (minhajurrohoman9016@gmail.com)
+[debug] [2021-12-11T14:22:44.828Z] [iam] checking project next-project-by-rahat for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-11T14:22:44.829Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/next-project-by-rahat:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-11T14:22:55.964Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2021-12-11T14:22:55.965Z] > refreshing access token with scopes: []
+[debug] [2021-12-11T14:22:55.965Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-11T14:22:55.968Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-12-11T14:22:56.256Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.getAccessToken (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:146:23)
+    at async Client.addAuthHeader (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:137:21)
+    at async Client.request (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:34)
+    at async Object.getFirebaseProject (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
+    at async C:\Users\minha\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project next-project-by-rahat. Please make sure the project exists and your account has permission to access it.
