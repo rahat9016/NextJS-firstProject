@@ -1,0 +1,108 @@
+.welcomeContainer {
+  background-image: url("../../public/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-position: center center;
+  margin-top: 40px;
+}
+.welcomeWrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.welcomeContent {
+  width: 80%;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.603);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 999999;
+  text-align: center;
+}
+.welcomeContent h1 {
+  font-size: 50px;
+  color: rgb(17, 17, 17);
+}
+.welcomeContent p {
+  font-size: 18px;
+  color: rgb(47, 47, 47);
+}
+
+@media only screen and (max-width: 600px) {
+  .welcomeContainer {
+    height: 400px;
+  }
+  .welcomeContent {
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    padding: 10px;
+  }
+  .welcomeContent h1 {
+    font-size: 30px;
+  }
+  .welcomeContent p {
+    font-size: 16px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .welcomeContainer {
+    height: 400px;
+  }
+  .welcomeContent {
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+  }
+  .welcomeContent h1 {
+    font-size: 30px;
+  }
+  .welcomeContent p {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .welcomeContainer {
+    height: 400px;
+  }
+  .welcomeContent {
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+  }
+  .welcomeContent h1 {
+    font-size: 40px;
+  }
+  .welcomeContent p {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .welcomeContainer {
+    height: 600px;
+  }
+  .welcomeContent {
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .welcomeContent h1 {
+    font-size: 50px;
+  }
+  .welcomeContent p {
+    font-size: 18px;
+  }
+}

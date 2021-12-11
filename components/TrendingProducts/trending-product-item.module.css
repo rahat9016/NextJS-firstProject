@@ -1,0 +1,18 @@
+.productBox {
+  padding: 10px;
+}
+.trendingProductImgBox > img {
+  width: 100%;
+}
+.trendingProductTitle {
+  text-align: left;
+  padding-top: 10px;
+  margin: 0px;
+}
+.trendingPrice {
+  display: flex;
+  gap: 10px;
+}
+.trendingProductPrice {
+  text-decoration: line-through;
+}

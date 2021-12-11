@@ -1,0 +1,192 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+}
+/* Information Section */
+.infoContainer {
+  display: flex;
+  height: 30px;
+  gap: 15px;
+}
+.infoIconBox {
+  display: flex;
+  align-items: center;
+  color: #878787;
+  font-weight: 100;
+  padding: 10px;
+}
+.infoIconBox > p {
+  /* margin-top: 12px; */
+  margin-left: 5px;
+  display: inline-block;
+}
+/* Discount Section */
+.discountNumber {
+  color: rgb(206, 0, 110);
+  font-size: 16px;
+  margin: 0px 5px;
+}
+/* Location Section */
+.locationContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.locationIconBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.locationIconBox > p {
+  color: #878787;
+}
+.countrySelect,
+.languageSelect {
+  color: #878787;
+  outline: none;
+}
+
+/* Media Query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .infoIconBox > p {
+    font-size: 8px;
+  }
+  .discountContainer > p {
+    font-size: 8px;
+  }
+  /* Discount Section */
+  .discountNumber {
+    font-size: 12px;
+    margin: 0px 2px;
+  }
+  /* Location Section */
+  .locationContainer {
+    gap: 8px;
+  }
+  .locationIconBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .locationIconBox > svg {
+    font-size: 12px;
+  }
+  .locationIconBox > p {
+    font-size: 8px;
+  }
+  .countrySelect,
+  .languageSelect {
+    outline: none;
+    font-size: 8px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .infoIconBox > p {
+    font-size: 8px;
+  }
+  .discountContainer > p {
+    font-size: 8px;
+  }
+  /* Discount Section */
+  .discountNumber {
+    font-size: 12px;
+    margin: 0px 2px;
+  }
+  /* Location Section */
+  .locationContainer {
+    gap: 8px;
+  }
+  .locationIconBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .locationIconBox > svg {
+    font-size: 12px;
+  }
+  .locationIconBox > p {
+    font-size: 8px;
+  }
+  .countrySelect,
+  .languageSelect {
+    outline: none;
+    font-size: 8px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .infoIconBox > p {
+    font-size: 8px;
+  }
+  .discountContainer > p {
+    font-size: 8px;
+  }
+  /* Discount Section */
+  .discountNumber {
+    font-size: 12px;
+    margin: 0px 2px;
+  }
+  /* Location Section */
+  .locationContainer {
+    gap: 8px;
+  }
+  .locationIconBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .locationIconBox > svg {
+    font-size: 12px;
+  }
+  .locationIconBox > p {
+    font-size: 8px;
+  }
+  .countrySelect,
+  .languageSelect {
+    outline: none;
+    font-size: 8px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .infoIconBox > p {
+    font-size: 16px;
+  }
+  .discountContainer > p {
+    font-size: 16px;
+  }
+  /* Discount Section */
+  .discountNumber {
+    font-size: 18px;
+    margin: 0px 5px;
+  }
+  /* Location Section */
+  .locationContainer {
+    gap: 12px;
+  }
+  .locationIconBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .locationIconBox > svg {
+    font-size: 12px;
+  }
+  .locationIconBox > p {
+    font-size: 16px;
+  }
+  .countrySelect,
+  .languageSelect {
+    outline: none;
+    font-size: 16px;
+  }
+}

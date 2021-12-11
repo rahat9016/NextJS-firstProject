@@ -1,0 +1,70 @@
+.trendingContainer {
+  width: 100%;
+}
+.trendingWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.trendingTitle {
+  font-size: 36px;
+}
+.trendingCaption {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.trendingProductItemContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .trendingWrapper {
+    width: 100%;
+  }
+  .trendingTitle {
+    font-size: 26px;
+  }
+  .trendingProductItemContainer {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .trendingWrapper {
+    width: 100%;
+  }
+  .trendingTitle {
+    font-size: 26px;
+  }
+  .trendingProductItemContainer {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .trendingWrapper {
+    width: 80%;
+  }
+  .trendingTitle {
+    font-size: 26px;
+  }
+  .trendingProductItemContainer {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .trendingTitle {
+    font-size: 26px;
+  }
+  .trendingProductItemContainer {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Normann Copenhagen Junto Carafe",
+      "description": "PRODUCT DETAILS Floating Leaves is a collaboration between 3 Copenhagen-based design companies, featuring world renowed design studio Norm Architects, print house Paper Collective and product makers Moebe. Together, they have introduced...",
+      "price": 46.0,
+      "image": "images/tp1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Meraki Diffuser Essential Oil",
+      "description": "PRODUCT DETAILS Floating Leaves is a collaboration between 3 Copenhagen-based design companies, featuring world renowed design studio Norm Architects, print house Paper Collective and product makers Moebe. Together, they have introduced...",
+      "price": 39.0,
+      "image": "images/tp2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Shop Kitchen & Serveware",
+      "description": "PRODUCT DETAILS Floating Leaves is a collaboration between 3 Copenhagen-based design companies, featuring world renowed design studio Norm Architects, print house Paper Collective and product makers Moebe. Together, they have introduced...",
+      "price": 19.0,
+      "image": "images/tp3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Eva Solo Sweep Dustpan & Brush Set",
+      "description": "Viverra a consectetur Go sporty this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish sporty...",
+      "price": 39.0,
+      "image": "images/tp4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Food & Drink - Gift Ideas    ",
+      "description": "Viverra a consectetur Go sporty this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish sporty...",
+      "price": 39.0,
+      "image": "images/tp5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Morso Wooden Tray With 2 Jars",
+      "description": "Viverra a consectetur Go sporty this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish sporty...",
+      "price": 56.0,
+      "image": "images/tp6.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Mortars Kit - Bowl & Pestle",
+      "description": "Viverra a consectetur Go sporty this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish sporty...",
+      "price": 42.0,
+      "image": "images/tp7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Eva Solo Silhouette Storage Jar",
+      "description": "Viverra a consectetur Go sporty this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish sporty...",
+      "price": 23.0,
+      "image": "images/tp8.jpg"
+    }
+  ]
+}

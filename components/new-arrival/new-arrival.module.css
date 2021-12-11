@@ -1,0 +1,57 @@
+.newArrivalContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+.arrivalContentBox {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.arrivalTitle {
+  font-size: 36px;
+}
+.arrivalDescription {
+  color: rgb(78, 78, 78);
+}
+
+.arrivalContentTitle {
+  font-size: 40px;
+}
+.arrivalProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .arrivalProduct {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .arrivalProduct {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .arrivalProduct {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .arrivalProduct {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .arrivalProduct {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,45 @@
+.heroProductSection {
+  width: 100%;
+}
+.heroProductContainer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+  .heroProductContainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .heroProductContainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .heroProductContainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .heroProductContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
