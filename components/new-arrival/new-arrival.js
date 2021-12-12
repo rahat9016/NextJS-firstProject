@@ -4,7 +4,7 @@ import classes from "./new-arrival.module.css";
 function NewArrival() {
   const arrivalProducts = getArrivalProducts();
   return (
-    <section>
+    <section id="product">
       <div className={classes.newArrivalContainer}>
         <div className={classes.arrivalContentBox}>
           <h1 className={classes.arrivalTitle}>New Arrival</h1>

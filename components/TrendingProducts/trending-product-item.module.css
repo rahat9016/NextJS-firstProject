@@ -1,6 +1,12 @@
 .productBox {
-  padding: 10px;
   cursor: pointer;
+}
+.productButton {
+  position: absolute;
+  bottom: -50%;
+  right: 15%;
+  -webkit-transform: translate(-50%, -50);
+  transform: translate(-50%, -50);
 }
 .btnBuy,
 .btnAdd {
@@ -13,7 +19,7 @@
 }
 .btnBuy {
   border: 3px solid orangered;
-  background-color: none;
+  background-color: transparent;
   color: orangered;
   padding: 9px 20px;
 }
@@ -26,12 +32,9 @@
   overflow: hidden;
   transition: 1s ease-in-out;
 }
-.productButton {
-  position: absolute;
-  right: 50px;
-}
+
 .trendingProductImgBox:hover .productButton {
-  bottom: 37px;
+  bottom: 10%;
 }
 .trendingProductImgBox > img {
   width: 100%;
@@ -52,4 +55,103 @@
 }
 .trendingProductPrice {
   text-decoration: line-through;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .productButton {
+    bottom: -50%;
+    right: 15%;
+  }
+  .btnBuy,
+  .btnAdd {
+    padding: 7px 10px;
+    margin-right: 10px;
+  }
+  .btnBuy {
+    border: 3px solid orangered;
+    /* padding: 9px 20px; */
+  }
+  .btnAdd {
+    padding: 10px 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .productButton {
+    bottom: -50%;
+    right: 20%;
+  }
+  .btnBuy,
+  .btnAdd {
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+  .btnBuy {
+    border: 3px solid orangered;
+    padding: 8px 15px;
+  }
+  .btnAdd {
+    padding: 10px 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .productButton {
+    bottom: -50%;
+    right: 4%;
+  }
+  .btnBuy,
+  .btnAdd {
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+  .btnBuy {
+    border: 3px solid orangered;
+    padding: 8px 15px;
+  }
+  .btnAdd {
+    padding: 10px 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .productButton {
+    bottom: -50%;
+    right: 4%;
+  }
+  .btnBuy,
+  .btnAdd {
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+  .btnBuy {
+    border: 3px solid orangered;
+    padding: 8px 15px;
+  }
+  .btnAdd {
+    padding: 10px 10px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .productButton {
+    bottom: -50%;
+    right: 21%;
+  }
+  .btnBuy,
+  .btnAdd {
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+  .btnBuy {
+    border: 3px solid orangered;
+    padding: 8px 15px;
+  }
+  .btnAdd {
+    padding: 10px 10px;
+  }
 }

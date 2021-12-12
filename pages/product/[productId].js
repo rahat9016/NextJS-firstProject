@@ -5,7 +5,7 @@ function ProductPageDetail(props) {
   const product = props.product;
   if (!product) {
     <div>
-      <p>Loading...</p>
+      <p className="center">Loading...</p>
     </div>;
   }
   return (

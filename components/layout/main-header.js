@@ -32,10 +32,10 @@ function MainHeader() {
               <Link href="/">Home</Link>
             </li>
             <li className={classes.menuItem}>
-              <Link href="/products">Products</Link>
+              <Link href="#product">Products</Link>
             </li>
             <li className={classes.menuItem}>
-              <Link href="/trending">Trending</Link>
+              <Link href="#trending">Trending</Link>
             </li>
             <li className={classes.menuItem}>
               <Link href="/top-seller">Top Seller</Link>

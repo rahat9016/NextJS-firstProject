@@ -2,8 +2,9 @@ import { getIsFeatured } from "../../helpers/api-util";
 import TrendingProduct from "./trending-product-item";
 import classes from "./trending-products.module.css";
 function TrendingProducts(props) {
+  const products = props.products;
   return (
-    <section>
+    <section id="trending">
       <div className={classes.trendingContainer}>
         <div className={classes.trendingWrapper}>
           <div className={classes.trendingCaption}>
@@ -11,7 +12,7 @@ function TrendingProducts(props) {
             <p>Get through all trending products and get your best deal</p>
           </div>
           <div className={classes.trendingProductItemContainer}>
-            {props.products?.map((product) => (
+            {products?.map((product) => (
               <TrendingProduct key={product.id} product={product} />
             ))}
           </div>
@@ -26,6 +27,7 @@ export async function getStaticProps() {
     props: {
       products: products,
     },
+    revalidate: 30,
   };
 }
 export default TrendingProducts;

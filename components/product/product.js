@@ -7,10 +7,10 @@ function ProductDetailPage(props) {
   return (
     <div className={classes.productDetailContainer}>
       <div className={classes.productDetailWrapper}>
-        <div>
+        <div className={classes.ProductImgBox}>
           <img src={"/" + image} alt={title} className={classes.productImg} />
         </div>
-        <div>
+        <div className={classes.productDetail}>
           <div>
             <h3 className={classes.productTitle}>{title}</h3>
             <div className={classes.productPriceBox}>
@@ -24,7 +24,7 @@ function ProductDetailPage(props) {
           <div className={classes.btnBox}>
             <div className={classes.quantityBox}>
               <FontAwesomeIcon icon={faMinus} />
-              <input type="number" value={1} />
+              <span>1</span>
               <FontAwesomeIcon icon={faPlus} />
             </div>
             <button className={classes.addBtn}>Add to Card</button>
