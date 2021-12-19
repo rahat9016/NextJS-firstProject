@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Footer from "../components/footer/footer";
 import Hero from "../components/Hero/hero";
 import HeroProducts from "../components/heroProduct/heroProducts";
@@ -10,7 +9,6 @@ import { getTrendingProducts } from "../helpers/api-util";
 
 function Home(props) {
   const products = props.products;
-  const [cartItems, setCartItems] = useState([]);
   return (
     <div>
       <Hero />
