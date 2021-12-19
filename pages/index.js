@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "../components/footer/footer";
 import Hero from "../components/Hero/hero";
 import HeroProducts from "../components/heroProduct/heroProducts";
@@ -8,6 +9,8 @@ import WelcomeArea from "../components/welcome/welcome-area";
 import { getTrendingProducts } from "../helpers/api-util";
 
 function Home(props) {
+  const products = props.products;
+  const [cartItems, setCartItems] = useState([]);
   return (
     <div>
       <Hero />
@@ -15,7 +18,7 @@ function Home(props) {
       <NewArrival />
       <WelcomeArea />
       <Services />
-      <TrendingProducts products={props.products} />
+      <TrendingProducts products={products} />
       <Footer />
     </div>
   );

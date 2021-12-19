@@ -13,10 +13,15 @@ import classes from "./main-header.module.css";
 
 function MainHeader() {
   const [menuClick, setMenuClick] = useState(false);
+  const [cartClick, setCartClick] = useState(false);
   const handleMenuClick = () => {
     setMenuClick(!menuClick);
-    console.log(menuClick);
   };
+  const handleCartClick = () => {
+    setCartClick(!cartClick);
+    console.log(cartClick);
+  };
+
   return (
     <header>
       <div className={classes.mainHeader}>
@@ -64,8 +69,9 @@ function MainHeader() {
               </Link>
             </li>
             <li>
-              <Link href="/cart">
+              <Link href="">
                 <FontAwesomeIcon
+                  onClick={handleCartClick}
                   className={classes.icon}
                   icon={faShoppingCart}
                 />

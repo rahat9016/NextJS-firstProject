@@ -17,8 +17,8 @@
   display: flex;
   gap: 15px;
 }
-.menu li a:hover {
-  color: #56cfe1;
+.menuItem > a {
+  font-weight: 700;
 }
 /* Icons CSS */
 .icons {
@@ -28,12 +28,14 @@
 }
 .icon {
   font-size: 20px;
-  color: #242424;
+  color: #555555;
   cursor: pointer;
+  transition: 1s ease-in-out;
 }
 .icon:hover {
-  color: #56cfe1;
+  color: #020202;
 }
+
 .menuBar {
   display: none;
 }
@@ -80,37 +82,23 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    /* height: 80px; */
     background-color: rgb(255, 255, 255);
     padding: 0px 30px;
     position: relative;
   }
-  /* Common CSS */
   .flex {
     display: flex;
   }
-  /* Menu Section */
   .menu {
     display: flex;
     gap: 15px;
   }
-  .menu li a:hover {
-    color: #56cfe1;
-  }
-  /* Icons CSS */
-  .icons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+
   .icon {
     font-size: 20px;
-    color: #242424;
     cursor: pointer;
   }
-  .icon:hover {
-    color: #56cfe1;
-  }
+
   .menuBar {
     display: none;
   }

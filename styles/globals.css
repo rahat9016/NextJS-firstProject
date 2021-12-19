@@ -43,6 +43,9 @@ ul {
 .center {
   text-align: center;
 }
+.fa-shopping-cart {
+  color: tomato;
+}
 /* Media Query */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
