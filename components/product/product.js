@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { discountPrice } from "../../helpers/discount-func";
 import classes from "./product.module.css";
 function ProductDetailPage(props) {
-  const { image, price, title, description } = props.product;
+  const product = props.product;
+
+  const { image, price, title, description } = product;
   return (
     <div className={classes.productDetailContainer}>
       <div className={classes.productDetailWrapper}>

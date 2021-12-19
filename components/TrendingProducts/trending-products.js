@@ -3,6 +3,7 @@ import TrendingProduct from "./trending-product-item";
 import classes from "./trending-products.module.css";
 function TrendingProducts(props) {
   const products = props.products;
+
   return (
     <section id="trending">
       <div className={classes.trendingContainer}>

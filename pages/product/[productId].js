@@ -4,10 +4,9 @@ import { getProductById, getTrendingProducts } from "../../helpers/api-util";
 function ProductPageDetail(props) {
   const product = props.product;
   if (!product) {
-    <div>
-      <p className="center">Loading...</p>
-    </div>;
+    return <p>Loading....</p>;
   }
+
   return (
     <section>
       <ProductDetailPage product={product} />
@@ -17,6 +16,11 @@ function ProductPageDetail(props) {
 export async function getStaticProps(context) {
   const id = context.params.productId;
   const product = await getProductById(id);
+  if (!product) {
+    return {
+      notFound: true,
+    };
+  }
   return {
     props: {
       product: product,
